@@ -1,0 +1,12 @@
+CORRECAO DE LOGIN V3
+
+- API no Vercel usa /api/index?_route=...
+- Removido rewrite genérico de /api/* que perdia a rota original.
+- React passou para HashRouter para não depender de rewrite de SPA.
+- /api/ping testa a Function sem banco.
+- /api/health valida variáveis, conecta ao PostgreSQL e inicializa admin/categorias.
+
+Depois do deploy:
+1. Abra /api/ping
+2. Abra /api/health
+3. Abra / e faça login.

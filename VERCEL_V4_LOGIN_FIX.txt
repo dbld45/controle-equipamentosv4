@@ -1,0 +1,7 @@
+Controle AV - Vercel v4
+
+Correções:
+- ADMIN_EMAIL/ADMIN_PASSWORD passam a ser sincronizados com o banco a cada inicialização.
+- Alterar a senha no Vercel + Redeploy redefine o acesso do administrador.
+- /api/health confirma se o administrador configurado existe e está ativo.
+- Mensagem de login diferencia falha de credencial de falha de conexão com a API.
